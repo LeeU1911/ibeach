@@ -1,0 +1,114 @@
+baseURL = "http://ibeachnhatrang.com/"
+languageCode = "en-us"
+title = "iBeach Nha Trang"
+theme = "rental"
+defaultContentLanguage = "en"
+
+########################################
+#
+## English
+[Languages.en]
+
+# Hero section
+[Languages.en.params.hero]
+bookNowText = "Book Now"
+logo = "logo.png"
+logo_alt = ""
+logoIntro = "logo-intro.png"
+logoIntro_alt = "iBeach Nha Trang"
+logoIntro_desc = "Awesome beach view from awesome apartments"
+
+[Languages.en.params.gallery]
+enable = true
+title = "A New, Meaningful Way to Travel"
+buttonText = "Learn More"
+buttonPath = "/learn-more"
+    [[Languages.en.params.gallery.slides]]
+      img = "gallery-img-1.jpg"
+      caption = "Inspiring destinations where you could never build a traditional hotel"
+    [[Languages.en.params.gallery.slides]]
+      img = "gallery-img-2.jpg"
+      caption = "Sleep in luxury and wake up inspired"
+    [[Languages.en.params.gallery.slides]]
+      img = "gallery-img-3.jpg"
+      caption = "World-class chefs bring you seasonal, hyper-local dining under the stars and sky"
+    [[Languages.en.params.gallery.slides]]
+      img = "gallery-img-4.jpg"
+      caption = "Experience Old World hospitality with modern style and a personal touch"
+
+[Languages.en.params.features]
+enable = true
+subtitle = "Featured Retreat"
+title = "Collective Governors Island"
+quote = "Scenery was beautiful and night on the deck under the stars was outstanding. Accommodations were 5 star. I loved it and will return!"
+featuresHeading = "Tripadvisor"
+featuresImage = "Header_5.jpg"
+featuresDesc = """
+You’ve never experienced New York City like this before. A quick ferry ride from downtown Manhattan, our
+                                    peaceful oasis is nestled near the hills of historic Governors Island. You’ll be surrounded by sprawling
+                                    green spaces, with unparalleled views of the Statue of Liberty across the New York Harbor. It’s a retreat
+                                    unlike any other in the world.
+                                    """
+ctaButton = "View Retreat"
+
+[Languages.en.params.explore]
+enable = false
+
+[Languages.en.params.contactCta]
+enable = true
+text = "Start planning your adventure now."
+buttonText = "Contact Us"
+
+[Languages.en.params.footer]
+addressTitle = "Address"
+address = "Hon Chong Apartments, Nha Trang, Viet Nam"
+contactTitle = "Transmission"
+socialMediaTitle = "Say Hi"
+newsletterButtonText = "Get in Touch"
+emailPlaceholder = "your email"
+[[Languages.en.params.footer.social]]
+  text = "Facebook"
+  link = "https://www.facebook.com/dalafarm.vn/"
+[[Languages.en.params.footer.social]]
+  text = "Instagram"
+  link = "https://www.pinterest.com/dalafarm/"
+  [[Languages.en.params.footer.quicklinks]]
+  text = "Terms and Conditions"
+  link = "/term-condition"
+  [[Languages.en.params.footer.quicklinks]]
+  text = "Privacy Policy"
+  link = "/privacy-policy"
+  [[Languages.en.params.footer.quicklinks]]
+  text = "FAQ"
+  link = "/faq"
+##########################################
+[Languages]
+#Vietnamese
+[Languages.vi]
+
+# Hero section
+[Languages.vi.params.hero]
+bookNowText = "Đặt Ngay"
+logo = "logo.png"
+logo_alt = ""
+logoIntro = "logo-intro.png"
+logoIntro--alt = "iBeach Nha Trang"
+logoIntro_desc = "Awesome beach from awesome apartments"
+
+[Languages.vi.params.gallery]
+enable = true
+title = "A New, Meaningful Way to Travel"
+buttonText = "Learn More"
+buttonPath = "/learn-more"
+    [[Languages.vi.params.gallery.slides]]
+      img = "gallery-img-1.jpg"
+      caption = "Inspiring destinations where you could never build a traditional hotel"
+    [[Languages.vi.params.gallery.slides]]
+      img = "gallery-img-2.jpg"
+      caption = "Sleep in luxury and wake up inspired"
+    [[Languages.vi.params.gallery.slides]]
+      img = "gallery-img-3.jpg"
+      caption = "World-class chefs bring you seasonal, hyper-local dining under the stars and sky"
+    [[Languages.vi.params.gallery.slides]]
+      img = "gallery-img-4.jpg"
+      caption = "Experience Old World hospitality with modern style and a personal touch"

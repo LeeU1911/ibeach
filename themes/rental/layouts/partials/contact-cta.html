@@ -1,0 +1,8 @@
+<aside class="ib-contact-cta">
+    <div class="container">
+        <div class="action text-center">
+            <p>{{ with .Site.Params.params.contactCta.text }}{{ . | markdownify }}{{ end }}</p>
+            <a href="#contact-modal" data-toggle="modal" data-target="#contact-modal" class="btn-default">{{ with .Site.Params.params.contactCta.buttonText }}{{ . | markdownify }}{{ end }}</a>
+        </div>
+    </div>
+</aside>

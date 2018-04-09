@@ -1,0 +1,20 @@
+<div class="header-bar" id="header-bar" data-trigger-passed-offset=".ib-header" data-passed-offset-adjust-distance="-61" data-passed-offset-class="pass-head-section">
+    <div class="container container-expanded header-bar-container">
+        <a href="{{ "/booking/" | absLangURL }}" class="book-now text-center">
+            <span>{{ with .Site.Params.params.hero.bookNowText }}{{ . }}{{ end }}</span>
+            <svg>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-book-now"></use>
+            </svg>
+        </a>
+        <a class="navbar-brand" href="#">
+            {{ $url := printf "images/%s" .Site.Params.params.hero.logo }}
+            <img src="{{ $url | absURL }}" alt="{{ .Site.Params.params.hero.logo_alt }}">
+        </a>
+        <div class="component-button-menu">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </div>
+</div>
+ 

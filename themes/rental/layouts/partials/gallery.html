@@ -1,0 +1,32 @@
+<section class="ib-gallery">
+    <div class="h">
+        <h2 class="h_title text-center text-uppercase">
+            <strong>{{ with .Site.Params.params.gallery.title }}{{ . | markdownify }}{{ end }}</strong>
+        </h2>
+    </div>
+    <div class="gallery">
+
+        {{ range $i, $e := .Site.Params.params.gallery.slides }}
+        {{ $url := printf "images/%s" .img }}
+        <div class="slide">
+            <figure>
+                <img width="768" height="512" src="{{ $url | absURL }}" class="prop-full-width" alt="" srcset="{{ $url }} 768w, {{ $url }} 300w, {{ $url }} 1024w, {{ $url }} 1536w"
+                     sizes="(max-width: 768px) 100vw, 768px" />
+                <figcaption>
+                    {{ .caption  | markdownify }} </figcaption>
+            </figure>
+        </div>
+        {{ end }}
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="action">
+                    <div class="text-center">
+                        <a href="{{ .Site.Params.params.gallery.buttonPath | absLangURL }}" class="btn-default">{{ .Site.Params.params.gallery.buttonText }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

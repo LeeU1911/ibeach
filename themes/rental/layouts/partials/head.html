@@ -1,0 +1,19 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    {{ if .IsHome }}
+    {{ with .Site.Params.params.description }}<meta name="description" content="{{ . }}">{{ end }}
+    {{ else if and (not .IsHome) .IsNode (not .IsPage) }}
+    {{ if isset .Params "description" }}<meta name="description" content="{{ .Description }}">{{ else }}<meta name="description" content="{{ .Title  }}">{{ end }}
+    {{ else }}
+    {{ if isset .Params "description" }}<meta name="description" content="{{ .Description }}">{{ else }}<meta name="description" content="{{ .Summary }}">{{ end }}
+    {{ end }}
+    {{ with .Site.Params.params.name }}<meta name="author" content="{{ . }}">{{ end }}
+    {{ .Hugo.Generator }}
+    <title>{{ .Title }}{{ if not .IsHome }} &middot; {{ .Site.Title }}{{ end }}</title>
+    <link rel="stylesheet" href="{{ "css/slick.css" | absURL }}">
+    <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | absURL }}">
+    <link rel="stylesheet" href="{{ "css/bootstrap-theme.css" | absURL }}">
+    <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
+</head>

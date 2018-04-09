@@ -1,0 +1,77 @@
+<section class="ib-features">
+    <div class="container container-small">
+        <div class="h text-center text-uppercase">
+            <p class="h_sub_title">{{ with .Site.Params.params.features.subtitle }}{{ . | markdownify }}{{ end }}</p>
+            <h2 class="h_title">{{ with .Site.Params.params.features.title }}{{ . | markdownify }}{{ end }}</h2>
+            <!--<figure class="block-featured__retreat-icon">-->
+                <!--<img width="222" height="222" src="images/cr_governors_web_badge_rotated.png" class="prop-max-width" alt="" srcset="images/cr_governors_web_badge_rotated.png 222w, images/cr_governors_web_badge_rotated-150x150.png 150w"-->
+                     <!--sizes="(max-width: 222px) 100vw, 222px"> </figure>-->
+        </div>
+    </div>
+    <figure class="main-figure">
+        {{ $url := printf "images/%s" .Site.Params.params.features.featuresImage }}
+        <img width="2880" height="1562" src="{{ $url | absURL }}" class="prop-max-width" alt="" srcset="images/Header_5.jpg 2880w, images/Header_5-300x163.jpg 300w, images/Header_5-768x417.jpg 768w, images/Header_5-1024x555.jpg 1024w"
+             sizes="(max-width: 2880px) 100vw, 2880px"> </figure>
+    <div class="container container-small">
+        <div class="row">
+            <div class="col">
+                <blockquote>
+            <span class="quote">
+              <span class="quote-open">“</span>{{ with .Site.Params.params.features.quote }}{{ . | markdownify }}{{ end }}
+              <span class="quote-close">”</span>
+            </span>
+                </blockquote>
+                <h3 class="features-heading">{{ with .Site.Params.params.features.featuresHeading }}{{ . | markdownify }}{{ end }}</h3>
+                <div class="features-detail">
+
+                    <div class="row">
+                        <!--<div class="col-md-5">-->
+                            <!--<div class="features text-center text-uppercase">-->
+                                <!--<div class="row">-->
+                                    <!--<div class="col-sm-6 col-6">-->
+                                        <!--<figure>-->
+                                            <!--<img src="images/HorsebackMark.png" class="prop-max-width" alt="">-->
+                                            <!--<figcaption>-->
+                                                <!--Acres of Expansive Park Space </figcaption>-->
+                                        <!--</figure>-->
+                                    <!--</div>-->
+                                    <!--<div class="col-sm-6 col-6">-->
+                                        <!--<figure>-->
+                                            <!--<img src="images/TrailHikeMark.png" class="prop-max-width" alt="">-->
+                                            <!--<figcaption>-->
+                                                <!--Walking Paths Through the Hills </figcaption>-->
+                                        <!--</figure>-->
+                                    <!--</div>-->
+                                    <!--<div class="col-sm-6 col-6">-->
+                                        <!--<figure>-->
+                                            <!--<img src="images/FlyfishMark.png" class="prop-max-width" alt="">-->
+                                            <!--<figcaption>-->
+                                                <!--Views of the New York Harbor </figcaption>-->
+                                        <!--</figure>-->
+                                    <!--</div>-->
+                                    <!--<div class="col-sm-6 col-6">-->
+                                        <!--<figure>-->
+                                            <!--<img src="images/ObserveMark.png" class="prop-max-width" alt="">-->
+                                            <!--<figcaption>-->
+                                                <!--Historic National Monuments </figcaption>-->
+                                        <!--</figure>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <div class="offset-md-1 col-md-6">
+                            <div class="features-description">
+                                <p>{{ with .Site.Params.params.features.featuresDesc }}{{ . | markdownify }}{{ end }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="action">
+                    <div class="text-center">
+                        <a href="/retreat/collective-governors-island/" class="btn-default">{{ with .Site.Params.params.features.ctaButton }}{{ . | markdownify }}{{ end }}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

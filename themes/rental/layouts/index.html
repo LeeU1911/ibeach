@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+{{ partial "head.html" . }}
+
+<body data-offset="78">
+{{ partial "book-now-cta.html" . }}
+
+{{ partial "header.html" . }}
+
+{{ partial "nav.html" . }}
+
+{{ partial "hero.html" . }}
+
+{{ if .Site.Params.params.gallery.enable }}
+{{ partial "gallery.html" . }}
+{{ end }}
+
+
+{{ if .Site.Params.params.features.enable }}
+{{ partial "features.html" . }}
+{{ end }}
+
+
+{{ if .Site.Params.params.explore.enable }}
+{{ partial "explore.html" . }}
+{{ end }}
+
+
+{{ if .Site.Params.params.contactCta.enable }}
+{{ partial "contact-cta.html" . }}
+{{ end }}
+
+{{ partial "footer.html" . }}
+
+{{ partial "js_index.html" . }}
+
+{{ partial "contact-modal.html" . }}
+</body>
+</html>
