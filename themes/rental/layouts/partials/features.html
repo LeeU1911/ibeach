@@ -7,7 +7,7 @@
     </div>
     <figure class="main-figure">
         {{ $url := printf "images/%s" .Site.Params.params.features.featuresImage }}
-        <img width="2880" height="1562" src="{{ $url | absURL }}" class="prop-max-width" alt="" srcset="images/Header_5.jpg 2880w, images/Header_5-300x200.jpg 300w, images/Header_5-768x512.jpg 768w, images/Header_5-1024x683.jpg 1024w"
+        <img width="2880" height="1562" src="{{ $url | absURL }}" class="prop-max-width" alt="" srcset="{{ $url | absURL }} 2880w, {{ $url | absURL }} 300w, {{ $url | absURL }} 768w, {{ $url | absURL }} 1024w"
              sizes="(max-width: 2880px) 100vw, 2880px"> </figure>
     <div class="container container-small">
         <div class="row">

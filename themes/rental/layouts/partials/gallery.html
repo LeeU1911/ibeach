@@ -10,7 +10,7 @@
         {{ $url := printf "images/%s" .img }}
         <div class="slide">
             <figure>
-                <img width="768" height="512" src="{{ $url | absURL }}" class="prop-full-width" alt="" srcset="{{ $url }} 768w, {{ $url }} 300w, {{ $url }} 1024w, {{ $url }} 1536w"
+                <img width="768" height="512" src="{{ $url | absURL }}" class="prop-full-width" alt="" srcset="{{ $url | absURL  }} 768w, {{ $url | absURL  }} 300w, {{ $url | absURL  }} 1024w, {{ $url | absURL }} 1536w"
                      sizes="(max-width: 768px) 100vw, 768px" />
                 <figcaption>
                     {{ .caption  | markdownify }} </figcaption>

@@ -28,11 +28,11 @@ title = ""
 buttonText = "Learn More"
 buttonPath = "#"
     [[Languages.en.params.gallery.slides]]
-      img = "gallery-img-1.jpg"
-      caption = "Inspiring destinations where you could never build a traditional hotel"
+      img = "slide-2.jpg"
+      caption = "Beach view apartments"
     [[Languages.en.params.gallery.slides]]
-      img = "gallery-img-2.jpg"
-      caption = "Sleep in luxury and wake up inspired"
+      img = "slide-1.jpg"
+      caption = "5-star grade interior"
 
 [Languages.en.params.features]
 enable = true
@@ -83,26 +83,63 @@ emailPlaceholder = "your email"
 # Hero section
 [Languages.vi.params.hero]
 bookNowText = "Đặt Ngay"
+emailContact = "ibeachnhatrang@gmail.com"
+whatsappContact = "+84976466202"
+phoneContact = "+84976466202"
+
 logo = "logo.png"
 logo_alt = ""
 logoIntro = "logo-intro.png"
 logoIntro--alt = "iBeach Nha Trang"
-logoIntro_desc = "Awesome beach from awesome apartments"
+logoIntro_desc = "Căn hộ hướng biển ở Nha Trang"
 
 [Languages.vi.params.gallery]
 enable = true
-title = "A New, Meaningful Way to Travel"
-buttonText = "Learn More"
+title = "Cách tuyệt vời để tận hưởng Nha Trang"
+buttonText = "Tìm Hiểu Thêm"
 buttonPath = "/learn-more"
     [[Languages.vi.params.gallery.slides]]
-      img = "gallery-img-1.jpg"
-      caption = "Inspiring destinations where you could never build a traditional hotel"
+      img = "slide-2.jpg"
+      caption = "Căn hộ nhìn thẳng ra biển"
     [[Languages.vi.params.gallery.slides]]
-      img = "gallery-img-2.jpg"
-      caption = "Sleep in luxury and wake up inspired"
-    [[Languages.vi.params.gallery.slides]]
-      img = "gallery-img-3.jpg"
-      caption = "World-class chefs bring you seasonal, hyper-local dining under the stars and sky"
-    [[Languages.vi.params.gallery.slides]]
-      img = "gallery-img-4.jpg"
-      caption = "Experience Old World hospitality with modern style and a personal touch"
+      img = "slide-1.jpg"
+      caption = "Tiện nghi nội thất cao cấp tiêu chuẩn 5 sao"
+
+[Languages.vi.params.features]
+enable = true
+subtitle = "Căn hộ tiêu biểu"
+title = "Căn hộ Hòn Chồng"
+#quote = ""
+featuresHeading = ""
+featuresImage = "Header_5.jpg"
+featuresDesc = """"""
+ctaButton = "Xem"
+ctaButtonPath = "#"
+
+[Languages.vi.params.explore]
+viable = false
+
+[Languages.vi.params.contactCta]
+enable = false
+text = "Start planning your adventure now."
+buttonText = "Contact Us"
+
+[Languages.vi.params.footer]
+addressTitle = "Địa chỉ"
+address = "Hon Chong Apartments, Nha Trang, Viet Nam"
+contactTitle = "Liên Hệ"
+socialMediaTitle = "Ghé Thăm"
+newsletterButtonText = "Get in Touch"
+emailPlaceholder = "your email"
+[[Languages.vi.params.footer.social]]
+  text = "Facebook"
+  link = "https://www.facebook.com/ibeachnhatrang"
+[[Languages.vi.params.footer.social]]
+  text = "Instagram"
+  link = "https://www.instagram.com/ibeachnhatrang/"
+  [[Languages.vi.params.footer.quicklinks]]
+  text = "Điều khoản"
+  link = "/term-condition"
+  [[Languages.vi.params.footer.quicklinks]]
+  text = "FAQ"
+  link = "/faq"
