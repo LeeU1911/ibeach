@@ -37,10 +37,10 @@
             <div class="modal-body">
                 <div class="info">
                     <span class="fas fa-envelope-square fa-2x"></span>
-                    <a href="mailto:chientranthien@gmail.com" target="_top">{{ with .Site.Params.params.hero.emailContact }}{{ . }}{{ end }}</a>
+                    <a href="mailto:{{ with .Site.Params.params.hero.emailContact }}{{ . }}{{ end }}" target="_top">{{ with .Site.Params.params.hero.emailContact }}{{ . }}{{ end }}</a>
                 </div>
-                <div class="info"><span class="fab fa-whatsapp-square fa-2x"></span><a href="tel:+84962149302">{{ with .Site.Params.params.hero.whatsappContact }}{{ . }}{{ end }}</a></div>
-                <div class="info"><span class="fas fa-phone-square fa-2x"></span><a href="tel:+84962149302">{{ with .Site.Params.params.hero.phoneContact }}{{ . }}{{ end }}</a></div>
+                <div class="info"><span class="fab fa-whatsapp-square fa-2x"></span><a href="tel:{{ with .Site.Params.params.hero.whatsappContact }}{{ . }}{{ end }}">{{ with .Site.Params.params.hero.whatsappContact }}{{ . }}{{ end }}</a></div>
+                <div class="info"><span class="fas fa-phone-square fa-2x"></span><a href="tel:{{ with .Site.Params.params.hero.phoneContact }}{{ . }}{{ end }}">{{ with .Site.Params.params.hero.phoneContact }}{{ . }}{{ end }}</a></div>
             </div>
         </div>
     </div>

@@ -1,39 +1,6 @@
 <footer class="footer">
     <div class="container container-medium">
-        <div class="block-contact text-center">
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <h2 class="text-uppercase">{{ with .Site.Params.params.footer.addressTitle }}{{ . | markdownify }}{{ end }}</h2>
-                    <address>
-                        {{ with .Site.Params.params.footer.address }}{{ . | markdownify }}{{ end }}</address>
-                </div>
-                <div class="col-md-4">
-                    <h2 class="text-uppercase">{{ with .Site.Params.params.footer.contactTitle }}{{ . | markdownify }}{{ end }}</h2>
-                    <p>
-                        <a href="tel:(970) 445-2033">(970) 445-2033</a>
-                        <br>
-                        <a href="mailto:hello@collectiveretreats.com">hello@collectiveretreats.com</a>
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <h2 class="text-uppercase">{{ with .Site.Params.params.footer.socialMediaTitle }}{{ . | markdownify }}{{ end }}</h2>
-                    <ul class="list-unstyled">
-                        {{ range .Site.Params.params.footer.social }}
-                        <li><a href="{{ .link }}" target="_blank">{{ .text }}</a></li>
-                        {{ end }}
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-12">
-                <form action="#" class="component-form block-newsletter action-process-newsletter">
-                    <input type="email" name="EMAIL" placeholder="{{ with .Site.Params.params.footer.emailPlaceholder }}{{ . | markdownify }}{{ end }}" required>
-                    <input type="submit" value="{{ with .Site.Params.params.footer.newsletterButtonText }}{{ . | markdownify }}{{ end }}" class="btn-default btn-submit">
-                    <input type="hidden" name="action" value="process:newsletter">
-                </form>
-            </div>
-        </div>
+        {{ partial "footer_contact.html" . }}
         <nav class="internal-links text-uppercase">
             <div class="row justify-content-around">
                 {{ range .Site.Params.params.footer.quicklinks }}

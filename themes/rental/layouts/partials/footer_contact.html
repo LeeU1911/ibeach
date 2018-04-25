@@ -1,0 +1,25 @@
+<div class="block-contact text-center">
+    <div class="row text-center">
+        <div class="col-md-4">
+            <h2 class="text-uppercase">{{ with .Site.Params.params.footer.addressTitle }}{{ . | markdownify }}{{ end }}</h2>
+            <address>
+                {{ with .Site.Params.params.footer.address }}{{ . | markdownify }}{{ end }}</address>
+        </div>
+        <div class="col-md-4">
+            <h2 class="text-uppercase">{{ with .Site.Params.params.footer.contactTitle }}{{ . | markdownify }}{{ end }}</h2>
+            <p>
+                <a href="tel:{{ with .Site.Params.params.hero.phoneContact }}{{ . }}{{ end }}">{{ with .Site.Params.params.hero.phoneContact }}{{ . }}{{ end }}</a>
+                <br>
+                <a href="mailto:{{ with .Site.Params.params.hero.emailContact }}{{ . }}{{ end }}">{{ with .Site.Params.params.hero.emailContact }}{{ . }}{{ end }}</a>
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h2 class="text-uppercase">{{ with .Site.Params.params.footer.socialMediaTitle }}{{ . | markdownify }}{{ end }}</h2>
+            <ul class="list-unstyled">
+                {{ range .Site.Params.params.footer.social }}
+                <li><a href="{{ .link }}" target="_blank">{{ .text }}</a></li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</div>
