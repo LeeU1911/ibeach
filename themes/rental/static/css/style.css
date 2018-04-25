@@ -1,0 +1,14 @@
+.info{
+
+color: #00BEC5;
+margin: 12px 0;
+
+ font-family: "Prata",serif;
+ letter-spacing: 1px;
+}
+
+.info span{
+margin: 0 6px;
+    vertical-align: middle;
+
+}
