@@ -56,7 +56,7 @@ buttonText = "Contact Us"
 [Languages.en.params.footer]
 addressTitle = "Address"
 address = "Hon Chong Apartments, Nha Trang, Viet Nam"
-contactTitle = "Transmission"
+contactTitle = "Contact"
 socialMediaTitle = "Say Hi"
 newsletterButtonText = "Get in Touch"
 emailPlaceholder = "your email"
