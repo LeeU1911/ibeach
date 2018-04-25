@@ -12,6 +12,10 @@ defaultContentLanguage = "en"
 # Hero section
 [Languages.en.params.hero]
 bookNowText = "Book Now"
+emailContact = "ibeachnhatrang@gmail.com"
+whatsappContact = "+84976466202"
+phoneContact = "+84976466202"
+
 logo = "logo.png"
 logo_alt = ""
 logoIntro = "logo-intro.png"
@@ -20,42 +24,32 @@ logoIntro_desc = "Awesome beach view from awesome apartments"
 
 [Languages.en.params.gallery]
 enable = true
-title = "A New, Meaningful Way to Travel"
+title = ""
 buttonText = "Learn More"
-buttonPath = "/learn-more"
+buttonPath = "#"
     [[Languages.en.params.gallery.slides]]
       img = "gallery-img-1.jpg"
       caption = "Inspiring destinations where you could never build a traditional hotel"
     [[Languages.en.params.gallery.slides]]
       img = "gallery-img-2.jpg"
       caption = "Sleep in luxury and wake up inspired"
-    [[Languages.en.params.gallery.slides]]
-      img = "gallery-img-3.jpg"
-      caption = "World-class chefs bring you seasonal, hyper-local dining under the stars and sky"
-    [[Languages.en.params.gallery.slides]]
-      img = "gallery-img-4.jpg"
-      caption = "Experience Old World hospitality with modern style and a personal touch"
 
 [Languages.en.params.features]
 enable = true
-subtitle = "Featured Retreat"
-title = "Collective Governors Island"
-quote = "Scenery was beautiful and night on the deck under the stars was outstanding. Accommodations were 5 star. I loved it and will return!"
-featuresHeading = "Tripadvisor"
+subtitle = "Featured Apartment"
+title = "Hon Chong Apartment"
+#quote = ""
+featuresHeading = ""
 featuresImage = "Header_5.jpg"
-featuresDesc = """
-You’ve never experienced New York City like this before. A quick ferry ride from downtown Manhattan, our
-                                    peaceful oasis is nestled near the hills of historic Governors Island. You’ll be surrounded by sprawling
-                                    green spaces, with unparalleled views of the Statue of Liberty across the New York Harbor. It’s a retreat
-                                    unlike any other in the world.
-                                    """
-ctaButton = "View Retreat"
+featuresDesc = """"""
+ctaButton = "View"
+ctaButtonPath = "#"
 
 [Languages.en.params.explore]
 enable = false
 
 [Languages.en.params.contactCta]
-enable = true
+enable = false
 text = "Start planning your adventure now."
 buttonText = "Contact Us"
 
@@ -68,10 +62,10 @@ newsletterButtonText = "Get in Touch"
 emailPlaceholder = "your email"
 [[Languages.en.params.footer.social]]
   text = "Facebook"
-  link = "https://www.facebook.com/dalafarm.vn/"
+  link = "https://www.facebook.com/ibeachnhatrang"
 [[Languages.en.params.footer.social]]
   text = "Instagram"
-  link = "https://www.pinterest.com/dalafarm/"
+  link = "https://www.instagram.com/ibeachnhatrang/"
   [[Languages.en.params.footer.quicklinks]]
   text = "Terms and Conditions"
   link = "/term-condition"

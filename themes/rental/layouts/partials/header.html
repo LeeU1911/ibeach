@@ -29,7 +29,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
+                <h5 class="modal-title" id="exampleModalLabel">{{ with .Site.Params.params.hero.bookNowText }}{{ . }}{{ end }}</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -37,10 +37,10 @@
             <div class="modal-body">
                 <div class="info">
                     <span class="fas fa-envelope-square fa-2x"></span>
-                    <a href="mailto:chientranthien@gmail.com" target="_top">chientranthien@gmail.com</a>
+                    <a href="mailto:chientranthien@gmail.com" target="_top">{{ with .Site.Params.params.hero.emailContact }}{{ . }}{{ end }}</a>
                 </div>
-                <div class="info"><span class="fab fa-whatsapp-square fa-2x"></span><a href="tel:+84962149302">+84 962 149 302</a></div>
-                <div class="info"><span class="fas fa-phone-square fa-2x"></span><a href="tel:+84962149302">+84 962 149 302</a></div>
+                <div class="info"><span class="fab fa-whatsapp-square fa-2x"></span><a href="tel:+84962149302">{{ with .Site.Params.params.hero.whatsappContact }}{{ . }}{{ end }}</a></div>
+                <div class="info"><span class="fas fa-phone-square fa-2x"></span><a href="tel:+84962149302">{{ with .Site.Params.params.hero.phoneContact }}{{ . }}{{ end }}</a></div>
             </div>
         </div>
     </div>
