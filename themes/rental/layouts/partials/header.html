@@ -1,20 +1,47 @@
 <div class="header-bar" id="header-bar" data-trigger-passed-offset=".ib-header" data-passed-offset-adjust-distance="-61" data-passed-offset-class="pass-head-section">
     <div class="container container-expanded header-bar-container">
-        <a href="{{ "/booking/" | absLangURL }}" class="book-now text-center">
-            <span>{{ with .Site.Params.params.hero.bookNowText }}{{ . }}{{ end }}</span>
-            <svg>
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-book-now"></use>
-            </svg>
-        </a>
-        <a class="navbar-brand" href="#">
-            {{ $url := printf "images/%s" .Site.Params.params.hero.logo }}
-            <img src="{{ $url | absURL }}" alt="{{ .Site.Params.params.hero.logo_alt }}">
-        </a>
+
         <div class="component-button-menu">
             <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
         </div>
+
+        <a class="navbar-brand" href="#">
+            {{ $url := printf "images/%s" .Site.Params.params.hero.logo }}
+            <img src="{{ $url | absURL }}" alt="{{ .Site.Params.params.hero.logo_alt }}">
+        </a>
+
+        <a data-toggle="modal" data-target="#info-modal" href="{{ "/booking/" | absLangURL }}" class="book-now text-center">
+        <span>{{ with .Site.Params.params.hero.bookNowText }}{{ . }}{{ end }}</span>
+        <svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-book-now"></use>
+        </svg>
+        </a>
+
+
     </div>
 </div>
- 
+
+
+<!-- Modal -->
+<div class="modal fade" id="info-modal" tabindex="-1" role="dialog" aria-labelledby="info-modal-label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="info-modal-label">Contact us</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="info-item">
+                    <span class="fas fa-envelope-square fa-2x"></span>
+                    <a href="mailto:chientranthien@gmail.com" target="_top">chientranthien@gmail.com</a>
+                </div>
+                <div class="info-item"><span class="fab fa-whatsapp-square fa-2x"></span><a href="tel:+84962149302">+84 962 149 302</a></div>
+                <div class="info-item"><span class="fas fa-phone-square fa-2x"></span><a href="tel:+84962149302">+84 962 149 302</a></div>
+            </div>
+        </div>
+    </div>
+</div>
